@@ -1,16 +1,148 @@
 <!DOCTYPE html>
+<!--
+  ============================================================
+  PRACTICE SANDBOX  -  this is a safe place to learn.
+  This page is NOT connected to focuslighting.com in any way.
+  Editing it only changes your practice site at:
+      https://edwinlumen.github.io/website/
+  Break it, change it, experiment freely. Nothing real depends on it.
+
+  HOW EDITING WORKS:
+  1. Change something below and save the file.
+  2. In GitHub Desktop: write a note, Commit to main, then Push origin.
+  3. Wait ~1 minute, refresh your github.io URL, see the change.
+  ============================================================
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site is live</title>
+
+  <!-- This is the text shown in the browser tab. Try changing it. -->
+  <title>Practice Site - Focus Lighting</title>
+
+  <!--
+    ===== STYLING =====
+    Everything between the <style> tags controls how the page looks.
+    The "look" is entirely yours to decide. These are plain, neutral
+    defaults so you have something to edit. Change any value and push
+    to see what happens.
+  -->
+  <style>
+    /* The whole page */
+    body {
+      font-family: Arial, Helvetica, sans-serif;  /* try: Georgia, serif; */
+      color: #222222;                              /* text color, hex code */
+      background-color: #ffffff;                   /* page background */
+      max-width: 800px;                            /* how wide the content gets */
+      margin: 0 auto;                              /* centers the content */
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    /* The big heading at the top */
+    h1 {
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      border-bottom: 1px solid #cccccc;  /* the thin line under headings */
+      padding-bottom: 6px;
+    }
+
+    /* The navigation links near the top */
+    nav a {
+      margin-right: 16px;
+      color: #555555;
+      text-decoration: none;  /* try: underline; */
+    }
+
+    /* The little sandbox banner */
+    .sandbox-note {
+      background-color: #fff8e1;
+      border: 1px solid #ffe082;
+      padding: 10px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #777777;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- A friendly reminder. Delete this whole block whenever you want. -->
+  <p class="sandbox-note">
+    This is a practice page for learning GitHub. It is not your real website.
+  </p>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Focus Lighting</h1>
+    <p>Architectural Lighting Design &middot; New York City</p>
+
+    <!-- Navigation menu. Each line is one link. The href="#" is a
+         placeholder that goes nowhere yet. -->
+    <nav>
+      <a href="#work">Our Work</a>
+      <a href="#firm">Our Firm</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <h1>It works.</h1>
-    <p>This is a placeholder page. If you can read this in a web browser at your
-       github.io address, your website pipeline is working correctly.</p>
-    <p>Replace this file with your own designed site whenever you're ready.</p>
+
+    <h2 id="firm">About</h2>
+    <p>
+      Focus Lighting is an award-winning architectural lighting design firm
+      based in New York City. (This text is filler from your public site,
+      here so you have something real to edit.)
+    </p>
+
+    <h2 id="work">Our Design Work</h2>
+    <!-- This is a list. Each <li> is one bullet. Add or remove lines. -->
+    <ul>
+      <li>Hotels + Resorts</li>
+      <li>Restaurants</li>
+      <li>Museums + Monuments</li>
+      <li>Residential</li>
+      <li>Retail</li>
+      <li>Entertainment Venues</li>
+      <li>Offices + Hospitals + Education</li>
+      <li>Exterior</li>
+      <li>Light Art</li>
+    </ul>
+
+    <h2>Our Firm</h2>
+    <ul>
+      <li>About Us</li>
+      <li>Our Team</li>
+      <li>Careers</li>
+      <li>News</li>
+      <li>Our Clients</li>
+      <li>Awards</li>
+    </ul>
+
   </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <p>
+      FOCUS LIGHTING, INC. &middot; Architectural Lighting Design<br>
+      221 West 116th Street, New York, NY 10026<br>
+      Tel 212.865.1565 &middot; Email info@focuslighting.com
+    </p>
+  </footer>
+
 </body>
 </html>
